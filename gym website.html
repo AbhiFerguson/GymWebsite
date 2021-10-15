@@ -9,13 +9,71 @@
 <link rel="stylesheet" href="css/style.css">
 <style>
     /* css Reset  */
-    body{margin: 0px;
+    body{
+        color: white;
+        margin: 0px;
         padding: 0px;
         background: url('img/ghjh.jpg');
 
     }
+    .left{
+
+        display: inline-block;
+        border: 2px solid red;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+    }
+    .right{
+        display: inline-block;
+        border: 2px solid green;
+        position: absolute;
+        right: 34px;
+        top: 20px;
+    }
+    .mid{
+        display: block;
+        width: 33%;
+        margin: 20px auto;   
+        border: 2px solid yellow;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 25px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: greenyellow;
+    }
 </style>
 <body>
-    
+    <header class="header">
+        <!-- left box for logo -->
+       <div class="left">
+         <img src="url" alt="">
+         <div>Abhinav Fitness</div>           
+       </div>
+       <!-- mid box for navbar -->
+       <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Fitness Center</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+       </div>
+       <!-- right box for buttons -->
+       <div class="right">
+I am right
+       </div>
+    </header>
 </body>
 </html>
